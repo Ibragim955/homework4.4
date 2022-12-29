@@ -92,25 +92,28 @@ public class Main {
         System.out.println("В среднем понадобиться " + time +" дней");
 
         //Задача8
-        int Masha = 67760 * 12;
-        int Denis = 83690 * 12;
-        int Crestina = 76230 * 127760;
-        System.out.println(Masha);
-        System.out.println(Denis);
-        System.out.println(Crestina);
+        int mashaSalary = 67760;
+        int denisSalary = 83690;
+        int crestinaSalary = 76230;
 
+        double indexPercent = 1.1;
+        double newMashaSalary = mashaSalary * indexPercent;
+        double newDenisSalary = denisSalary * indexPercent;
+        double newCrestinaSalary = crestinaSalary * indexPercent;
 
+        double annualMashaSalary = 12 * mashaSalary;
+        double newAnnualMashaSalary = 12 * newMashaSalary;
 
+        double annualDenisSalary = 12 * denisSalary;
+        double newAnnualDenisSalary = 12 * newDenisSalary;
 
+        double annualCrestinaSalary = 12 * crestinaSalary;
+        double  newAnnualCrestinaSalary = 12 * newCrestinaSalary;
 
-
-
-
-
-
-
-
-
-
+        System.out.println("Маша теперь получает " + newMashaSalary + " рублей. Годовой доход вырос на " + (newAnnualMashaSalary - annualMashaSalary) + "рублей».");
+        System.out.println("Маша теперь получает " + newDenisSalary + " рублей. Годовой доход вырос на " + (newAnnualDenisSalary - annualDenisSalary) + "рублей».");
+        System.out.println("Маша теперь получает " + newCrestinaSalary + " рублей. Годовой доход вырос на " + (newAnnualCrestinaSalary - annualCrestinaSalary) + "рублей».");
     }
 }
+
+
